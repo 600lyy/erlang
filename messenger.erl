@@ -49,7 +49,8 @@
 %%% name of the node where the messenger server runs
 
 -module(messenger).
--export([start_server/0, server/1, logon/1]).
+-export([start_server/0, server/1, logon/1,
+          logoff/0, message/2, client/2]).
 
 %%% The name of the node where the messenger server runs
 server_node() ->
